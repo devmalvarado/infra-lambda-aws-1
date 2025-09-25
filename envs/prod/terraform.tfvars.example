@@ -1,0 +1,12 @@
+# Ejemplo de configuración para el entorno de producción
+# Copia este archivo como terraform.tfvars y configura tus valores reales
+
+aws_region = "us-east-1"
+lambda_name = "crud-lambda-sheets-prod"
+lambda_handler = "com.example.OrderHandler::handleRequest"
+jar_path = "../aws-lambda-java-crud-sheets/target/crud-lambda-sheets-1.0.0.jar"
+memory_mb = 1024
+timeout_seconds = 25
+spreadsheet_id = "TU_SPREADSHEET_ID_PROD"
+sheet_name = "Orders"
+google_credentials_json_base64 = "BASE64_AQUI"
